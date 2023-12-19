@@ -4,3 +4,31 @@ DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 # Neovim
 rm -rf ${HOME}/.config/nvim
 ln -s $DOTFILES/nvim ${HOME}/.config/nvim
+
+# Tmux
+rm -rf ${HOME}/.config/tmux
+ln -s $DOTFILES/tmux ${HOME}/.config/tmux
+
+# kitty
+rm -rf ${HOME}/.config/kitty
+ln -s $DOTFILES/kitty ${HOME}/.config/kitty
+
+# phpactor
+rm -rf ${HOME}/.config/phpactor
+ln -s $DOTFILES/phpactor ${HOME}/.config/phpactor
+
+# Scripts
+mkdir -p $HOME/.local/bin
+ln -sf $DOTFILES/scripts/t ${HOME}/.local/bin/t
+
+# Vimrcs for Jetbrains IDEs and VSCode
+ln -sf $DOTFILES/vimrcs/ideavimrc ${HOME}/.ideavimrc
+ln -sf $DOTFILES/vimrcs/codevimrc ${HOME}/.codevimrc
+
+# Zsh
+ln -sf $DOTFILES/zsh/zshrc ${HOME}/.zshrc
+
+# Oh My Zsh
+if [ ! -d "${HOME}/.oh-my-zsh" ]; then
+    KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi

@@ -1,0 +1,160 @@
+"" Source your .vimrc
+"source ~/.vimrc
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+"Enable Multi Cursor
+set multiple-cursors
+
+"Activate Surround VIM
+set surround
+
+"Enabling relative line number
+set relativenumber
+set number
+
+" Do incremental searching.
+set incsearch
+
+" Ignore case when searched in lowercase
+set ignorecase smartcase
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+"Mapping Farsi Keyboard
+map ض q
+map ص w
+map ث e
+map ق r
+map ف t
+map غ y
+map ع u
+map ه i
+map خ o
+map ح p
+map ج [
+map چ ]
+map ش a
+map س s
+map ی d
+map ب f
+map ل g
+map ا h
+map ت j
+map ن k
+map م l
+map ک ;
+map گ '
+map ظ z
+map ط x
+map ز c
+map ر v
+map ذ b
+map د n
+map پ m
+map و ,
+map . .
+map ْ Q
+map ٌ W
+map ٍ E
+map ً R
+map ُ T
+map ِ Y
+map َ U
+map ّ I
+map ؤ A
+map ئ S
+map ي D
+map إ F
+map أ G
+map آ H
+map ة J
+map » K
+map « L
+map ؛ "
+map ك Z
+map ٓ X
+map ژ C
+map ٰ V
+map ‌ B
+map ٔ N
+map ء M
+map × ^
+map ﷼ $
+map لل gg
+map رهص viw
+map رهگ vi'
+map ره؛ vi"
+map رشگ va'
+map رش؛ va"
+map ره) vi(
+map رهج vi[
+map ره} vi{
+map رهف vit
+map رشف vat
+map رشج va[
+map رش} va{
+map رش) va(
+map رهذ vib
+map ره‌ viB
+map یهص diw
+map یهگ di'
+map یه؛ di"
+map یشگ da'
+map یش؛ da"
+map یه) di(
+map یهج di[
+map یه} di{
+map یهف dit
+map یشف dat
+map یشج da[
+map یش} da{
+map یش) da(
+map یهذ dib
+map یه‌ diB
+map زهص ciw
+map زهگ ci'
+map زه؛ ci"
+map زشگ ca'
+map زش؛ ca"
+map زه) ci(
+map زهج ci[
+map زه} ci{
+map زهف cit
+map زشف cat
+map زشج ca[
+map زش} ca{
+map زش) ca(
+map زهذ cib
+map زه‌ ciB
+map ۱ 1
+map ۲ 2
+map ۳ 3
+map ۴ 4
+map ۵ 5
+map ۶ 6
+map ۷ 7
+map ۸ 8
+map ۹ 9
+map ۰ 0
+map <Up> <C-u>zz
+map <Down> <C-d>zz
+map <Left> ^
+map <Right> $
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+
+" Find more examples here: https://jb.gg/share-ideavimrc
