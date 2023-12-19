@@ -17,6 +17,10 @@ ln -s $DOTFILES/kitty ${HOME}/.config/kitty
 rm -rf ${HOME}/.config/phpactor
 ln -s $DOTFILES/phpactor ${HOME}/.config/phpactor
 
+# Lazygit
+rm -rf ${HOME}/.config/lazygit
+ln -s $DOTFILES/lazygit ${HOME}/.config/lazygit
+
 # Scripts
 mkdir -p $HOME/.local/bin
 ln -sf $DOTFILES/scripts/t ${HOME}/.local/bin/t
