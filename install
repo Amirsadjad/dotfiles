@@ -24,6 +24,7 @@ ln -s $DOTFILES/lazygit ${HOME}/.config/lazygit
 # Scripts
 mkdir -p $HOME/.local/bin
 ln -sf $DOTFILES/scripts/t ${HOME}/.local/bin/t
+ln -sf $DOTFILES/lsps/blade/laravel-dev-tools ${HOME}/.local/bin/laravel-dev-tools
 
 # Vimrcs for Jetbrains IDEs and VSCode
 ln -sf $DOTFILES/vimrcs/ideavimrc ${HOME}/.ideavimrc
