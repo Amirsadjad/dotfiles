@@ -6,8 +6,8 @@ return {
   },
   cmd = { 'FloatermToggle' },
   init = function()
-    vim.g.floaterm_width = 1.1
-    vim.g.floaterm_height = 1.1
+    vim.g.floaterm_width = 0.9
+    vim.g.floaterm_height = 0.9
     vim.cmd([[
         highlight link Floaterm CursorLine
         highlight link FloatermBorder CursorLineBg

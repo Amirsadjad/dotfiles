@@ -8,9 +8,9 @@ return {
     },
     config = function()
         -- Floating Windows
-        vim.api.nvim_set_hl(0, 'FloatBorder', {
-            fg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background,
-            bg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background
+        vim.api.nvim_set_hl(0, 'FloatermBorder', {
+            fg = '#2a283d',
+            bg = '#2a283d'
         })
 
         -- Telescope
