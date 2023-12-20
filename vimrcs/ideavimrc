@@ -47,7 +47,13 @@ vnoremap y myy`y
 vnoremap Y myY`y
 
 "Paste replace visual selection without copying it.
-"vnoremap p _dP
+nnoremap d "_d
+nnoremap dd "_dd
+vnoremap d "_d
+nnoremap c "_c
+nnoremap cc "_cc
+vnoremap c "_c
+vnoremap p "_dP
 
 "Mapping Farsi Keyboard
 map <leader>] <Plug>(easymotion-jumptoanywhere)
