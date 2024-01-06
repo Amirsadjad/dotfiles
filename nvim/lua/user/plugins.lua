@@ -163,8 +163,11 @@ require('lazy').setup({
     -- Diagnostic panel
     { 'folke/trouble.nvim', dependencies = 'nvim-tree/nvim-web-devicons' },
 
-    --Composer
-    { 'noahfrederick/vim-composer' }
+    -- Composer
+    { 'noahfrederick/vim-composer' },
+
+    -- Sneak
+    { 'justinmk/vim-sneak' },
 }, {
   checker = {
     enabled = true,

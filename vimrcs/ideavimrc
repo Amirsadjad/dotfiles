@@ -55,6 +55,10 @@ nnoremap cc "_cc
 vnoremap c "_c
 vnoremap p "_dP
 
+"Add ; or , at the end of the line
+inoremap ;; <Esc>A;<Esc>
+inoremap ,, <Esc>A,<Esc>
+
 "Mapping Farsi Keyboard
 map <leader>] <Plug>(easymotion-jumptoanywhere)
 map \چ <Plug>(easymotion-jumptoanywhere)

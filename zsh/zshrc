@@ -124,9 +124,9 @@ ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_V
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 
 #Herd
-# export PATH="/Users/amirsadjad/Library/Application Support/Herd/bin/":$PATH
-# export HERD_PHP_82_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/82/"
-# export HERD_PHP_83_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/83/"
-# export HERD_PHP_81_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/81/"
-# export HERD_PHP_80_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/80/"
-# export HERD_PHP_74_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/74/"
+export PATH="/Users/amirsadjad/Library/Application Support/Herd/bin/":$PATH
+export HERD_PHP_82_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/82/"
+export HERD_PHP_83_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/83/"
+export HERD_PHP_81_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/81/"
+export HERD_PHP_80_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/80/"
+export HERD_PHP_74_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/74/"
