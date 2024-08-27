@@ -26,6 +26,16 @@ return {
 
     -- PHP
     require('lspconfig').intelephense.setup({
+      filetypes = {'php', 'blade'},
+      settings = {
+        intelephense = {
+            filetypes = { "php", "blade" },
+            files = {
+            associations = { "*.php", "*.blade.php" }, -- Associating .blade.php files as well
+            maxSize = 5000000,
+            },
+        },
+      },
       commands = {
         IntelephenseIndex = {
           function()
@@ -87,14 +97,14 @@ return {
 
     -- Tailwind CSS
     require('lspconfig').tailwindcss.setup({ 
+        filetypes = { 'html', 'blade', 'javascript' },
         capabilities = capabilities,
-        filetypes = { 'html', 'blade', 'javascript' }
     })
 
     -- CSS
     require('lspconfig').cssls.setup({
-      capabilities = capabilities,
-      filetypes = { 'css', 'scss', 'less', 'sass', 'stylus', 'html', 'blade', 'javascript' },
+        filetypes = { 'css', 'scss', 'less', 'sass', 'stylus', 'html', 'blade', 'javascript' },
+        capabilities = capabilities,
     })
 
     -- Bash
@@ -157,7 +167,7 @@ return {
 
     require('mason-null-ls').setup({ automatic_installation = true })
 
-    -- Laravel LSP
+    -- Blade LSP
     local lspconfig = require ('lspconfig')
     local configs = require ('lspconfig.configs')
     configs.blade = {

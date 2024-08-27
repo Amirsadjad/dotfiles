@@ -125,8 +125,29 @@ ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_V
 
 #Herd
 export PATH="/Users/amirsadjad/Library/Application Support/Herd/bin/":$PATH
+export HERD_PHP_74_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/74/"
+export HERD_PHP_80_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/80/"
+export HERD_PHP_81_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/81/"
 export HERD_PHP_82_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/82/"
 export HERD_PHP_83_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/83/"
-export HERD_PHP_81_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/81/"
-export HERD_PHP_80_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/80/"
-export HERD_PHP_74_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/74/"
+export HERD_PHP_84_INI_SCAN_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/php/84/"
+
+# Herd injected NVM configuration
+export NVM_DIR="/Users/amirsadjad/Library/Application Support/Herd/config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/Users/amirsadjad/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/Users/amirsadjad/miniconda3/etc/profile.d/conda.sh" ]; then
+#         . "/Users/amirsadjad/miniconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/Users/amirsadjad/miniconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# <<< conda initialize <<<
