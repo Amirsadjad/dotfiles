@@ -38,6 +38,13 @@ set clipboard+=unnamedplus
 "Don't use Ex mode, use Q for formatting.
 map Q gq
 
+""Select whole attribute in html
+map vix f"va"oB
+map vax f"va"f<Space>oBF<Space>
+
+""Select whole function
+map vif ?^\s*\(public\|protected\|private\)\s\+function\s\+\w\+<CR>/{<CR>va{ok
+
 "Reselect visual selection after indenting.
 vnoremap < <gv
 vnoremap > >gv
@@ -194,3 +201,5 @@ map <Right> $
 
 
 " Find more examples here: https://jb.gg/share-ideavimrc
+
+
