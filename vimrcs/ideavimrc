@@ -52,12 +52,15 @@ vnoremap > >gv
 "Maintain the cursor position when yanking a visual selection.
 vnoremap y myy`y
 vnoremap Y myY`y
-
+    
 "Paste replace visual selection without copying it.
 nnoremap d "_d
+nnoremap D "_D
 nnoremap dd "_dd
 vnoremap d "_d
+nnoremap x "_x
 nnoremap c "_c
+nnoremap C "_C
 nnoremap cc "_cc
 vnoremap c "_c
 vnoremap p "_dP

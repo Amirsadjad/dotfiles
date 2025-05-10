@@ -25,6 +25,37 @@ set ignorecase smartcase
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
+""Select whole attribute in html
+map vix f"va"oB
+map vax f"va"f<Space>oBF<Space>
+
+""Select whole function
+map vif ?^\s*\(public\|protected\|private\)\s\+function\s\+\w\+<CR>/{<CR>va{ok
+
+"Reselect visual selection after indenting.
+vnoremap < <gv
+vnoremap > >gv
+
+"Maintain the cursor position when yanking a visual selection.
+vnoremap y myy`y
+vnoremap Y myY`y
+
+"Paste replace visual selection without copying it.
+nnoremap d "_d
+nnoremap D "_D
+nnoremap dd "_dd
+vnoremap d "_d
+nnoremap x "_x
+nnoremap c "_c
+nnoremap C "_C
+nnoremap cc "_cc
+vnoremap c "_c
+vnoremap p "_dP
+
+"Add ; or , at the end of the line
+inoremap ;; <Esc>A;<Esc>
+inoremap ,, <Esc>A,<Esc>
+
 "Mapping Farsi Keyboard
 map ض q
 map ص w
